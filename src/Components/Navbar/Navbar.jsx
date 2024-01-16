@@ -11,7 +11,14 @@ import './stylesNav.css';
     <Navbar expand="lg" className="navbar">
       <Container fluid className='contenedorNav'>
         {/* Logo */}
-        <Navbar.Brand href="#">LOGO</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+          src="src\Components\Navbar\logoChedraui.png"
+            alt="Logo"
+            height="45"
+            className="d-inline-block align-top"
+          />{' '}
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='nav' />
         <Navbar.Collapse id="navbarScroll">
 
@@ -26,11 +33,11 @@ import './stylesNav.css';
           </Form>
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px'}}
+            // style={{ maxHeight: '100px'}}
             navbarScroll
           >
-            <Nav.Link href="#action1">Mi Cuenta<br/> <b>Ingresar</b></Nav.Link>
-            <Nav.Link href="#action2">Agregar Dirección </Nav.Link>
+            <Nav.Link className="ml-auto" href="#action1">Mi Cuenta<br/> <b>Ingresar</b></Nav.Link>
+            <Nav.Link className="ml-auto" href="#action2">Agregar Dirección </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
