@@ -1,0 +1,33 @@
+.contenedorNav{
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  top: 0%;
+  left: 0%;
+  background-color: transparent;
+  background-color: aqua;
+  /* align-items: center; */
+/* justify-content: space-between; */
+
+
+}
+
+.buscador{
+  margin-right: auto;
+  /* width: 20%; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.navbar .navbar-brand {
+  margin-right: auto; /* Mueve el logotipo o la marca al extremo izquierdo */
+} 
+
+
+/* Estilos para los enlaces dentro de la navbar */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  text-decoration: none; /* Sin subrayado */
+  margin-right: 50px; /* Espaciado entre enlaces */
+  /* font-weight: bold;  */
+}
