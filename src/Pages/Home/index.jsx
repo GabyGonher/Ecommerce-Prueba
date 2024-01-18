@@ -1,11 +1,15 @@
 import './stylesHome.css';
+// import BanerPrincipal  from "../../Components/Baner/BanerPrincipal";
+// BanerPrincipal
+import BanerPrincipal  from "../../Components/Baner/BanerPrincipal";
 
 function Home() {
 
 
   return (
     <>
-    <p className='title'>Este es el Home (:</p>
+     <BanerPrincipal />
+    {/* <p className='title'>Este es el Home (:</p> */}
     </>
   )
 }
