@@ -1,5 +1,5 @@
 .bodyNav{
-  background-color: rgb(116, 47, 206);
+  background-color: #F5F5F6;
   position: fixed;
   padding:1%;
   width: 100%;
@@ -8,12 +8,12 @@
 }
 
 .containerImag{
-  background-color:chartreuse;
+  background-color: transparent;
   padding: 15px;
 }
 
 .containerMenu{
-  background-color: chocolate;
+  background-color: transparent;
   padding: 15px;
   /* text-align: right;
   justify-content: end; */

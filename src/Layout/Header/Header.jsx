@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <>
-    <p className='title'>Este es el Header</p>
+    {/* <p className='title'>Este es el Header</p> */}
     <BarraNavbar />
     <NavMenu />
     </>

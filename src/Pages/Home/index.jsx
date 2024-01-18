@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <>
-    <p className='title'>Este es el Home (:</p>
+    {/* <p className='title'>Este es el Home (:</p> */}
     </>
   )
 }
