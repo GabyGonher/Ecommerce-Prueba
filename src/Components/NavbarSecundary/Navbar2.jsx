@@ -7,67 +7,42 @@ import landia from './img/chedrauilandia.webp';
 import farmacia from './img/farmacia.webp';
 import ofertas from './img/ofertas.webp';
 import cuestaMenos from './img/cuestaMenos.webp';
+import Image from 'react-bootstrap/Image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+
 export function NavMenu() {
   return (
     <>
-      {/* // src\Components\Navbar\logoChedraui.png */}
       <Navbar className="bg-body-tertiary bodyNav">
+        <FontAwesomeIcon className='IconBar' icon={faBars} />
         <Container className='containerImag' style={{ justifyContent: 'center' }}>
+
           <Navbar.Brand href="#home">
-            <img
-              // src="src/Components/Navbar2/img/selecto.png"
-              src={selectoImg}
-              width="20"
-              height="20"
-              className="d-inline-block align-top"
-              alt="selecto"
-            />
+            <Image className='imgCategory' src={selectoImg} fluid />
           </Navbar.Brand>
+
           <Navbar.Brand href="#home">
-            <img
-              src={martiMiercoles}
-              width="30rem"
-              height="30rem"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+            <Image className='imgCategory' src={martiMiercoles} fluid />
           </Navbar.Brand>
+
           <Navbar.Brand href="#home">
-            <img
-              src={landia}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+            <Image className='imgCategory' src={landia} fluid />
           </Navbar.Brand>
+
           <Navbar.Brand href="#home">
-            <img
-              src={farmacia}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+            <Image className='imgCategory' src={farmacia} fluid />
           </Navbar.Brand>
+
           <Navbar.Brand href="#home">
-            <img
-              src={ofertas}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+            <Image className='imgCategory' src={ofertas} fluid />
           </Navbar.Brand>
+
           <Navbar.Brand href="#home">
-            <img
-              src={cuestaMenos}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+            <Image className='imgCategory' src={cuestaMenos} fluid />
           </Navbar.Brand>
+
         </Container>
         <Container className='containerMenu' style={{ justifyContent: 'end' }} >
           <Navbar.Brand href="#home">Folletos</Navbar.Brand>
