@@ -1,18 +1,18 @@
-.bodyNav{
-  background-color: #F5F5F6;
+.bodyNav {
+  background-color: yellowgreen !important;
   position: fixed;
-  padding:1%;
+  padding: 1%;
   width: 100%;
-  top:12%;
+  top: 12%;
   left: 0%;
 }
 
-.containerImag{
+.containerImag {
   background-color: transparent;
   padding: 15px;
 }
 
-.containerMenu{
+.containerMenu {
   background-color: transparent;
   padding: 15px;
   /* text-align: right;

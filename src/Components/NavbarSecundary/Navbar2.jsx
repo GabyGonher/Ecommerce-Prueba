@@ -1,18 +1,18 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './stylesNav2.css';
-import  selectoImg  from './img/selecto.png';
-import  martiMiercoles  from './img/miercoles.webp';
-import  landia  from './img/chedrauilandia.webp';
-import  farmacia  from './img/farmacia.webp';
-import  ofertas  from './img/ofertas.webp';
-import  cuestaMenos  from './img/cuestaMenos.webp';
+import selectoImg from './img/selecto.png';
+import martiMiercoles from './img/miercoles.webp';
+import landia from './img/chedrauilandia.webp';
+import farmacia from './img/farmacia.webp';
+import ofertas from './img/ofertas.webp';
+import cuestaMenos from './img/cuestaMenos.webp';
 export function NavMenu() {
   return (
     <>
-       {/* // src\Components\Navbar\logoChedraui.png */}
+      {/* // src\Components\Navbar\logoChedraui.png */}
       <Navbar className="bg-body-tertiary bodyNav">
-        <Container className='containerImag' style={{  justifyContent: 'center' }}>
+        <Container className='containerImag' style={{ justifyContent: 'center' }}>
           <Navbar.Brand href="#home">
             <img
               // src="src/Components/Navbar2/img/selecto.png"
@@ -69,13 +69,13 @@ export function NavMenu() {
             />
           </Navbar.Brand>
         </Container>
-        <Container className='containerMenu' style={{  justifyContent: 'end' }} >
+        <Container className='containerMenu' style={{ justifyContent: 'end' }} >
           <Navbar.Brand href="#home">Folletos</Navbar.Brand>
           <Navbar.Brand href="#home">Recetas</Navbar.Brand>
           <Navbar.Brand href="#home">Ayuda</Navbar.Brand>
         </Container>
       </Navbar>
-      
+
     </>
   );
 }
