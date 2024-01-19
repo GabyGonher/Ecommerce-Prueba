@@ -12,7 +12,7 @@ export default function SeccionOfertaExclusiva() {
       <Container fluid className='OfertaExclusiva'>
         <Row >
           <Col xs={12} className='titleOfertaE text-center' >Ofertas exclusivas de Chedraui</Col>
-          <Col xs={12} className='seccionProductE  d-flex justify-content-between' >
+          <Col xs={12} className='seccionProductE  d-flex  justify-content-between' >
 
             {
               ofertas.map(oferta => (

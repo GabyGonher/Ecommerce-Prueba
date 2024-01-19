@@ -2,22 +2,25 @@
   height: 6rem;
   max-width: 20rem;
   position: relative;
+  background-color: transparent;
+
 }
 
-/* .ContainerImg { */
-/* height: fit-content;
-  width: 118%;
-  max-width: 200px;
-  border-radius: 5px;
-  justify-content: flex-start;
-  top: -1.2ch; */
-/* position: relative; */
-/* } */
 
 .img {
   border-radius: 10px;
   width: 300%;
   height: 110%;
+
+
+}
+
+.CardE:hover .img,
+.tituloProducto:hover {
+  filter: brightness(150%) contrast(120%);
+  transition: filter 0.3s ease-in-out;
+  color: black;
+
 }
 
 .tituloProducto {
@@ -27,8 +30,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* top: -5px;  */
-  padding: 6px;
   font-size: 20px;
   text-align: right;
 
