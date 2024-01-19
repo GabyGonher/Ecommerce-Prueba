@@ -1,0 +1,25 @@
+.seccionOferta{
+  background-color:transparent;
+  height: 8rem;
+  margin-top: 2rem;
+  max-width: 80rem;
+  font-weight: bold;
+
+  
+} 
+
+.titleOferta{
+  background-color: transparent;
+  font-family: Arial black;
+  color: #0077C8;
+  font-size: 2rem;
+  /* text-align: center !important; */
+  height: 3rem;
+
+}
+
+.seccionProduct{
+  background-color: transparent;
+  height: 5.5rem;
+  margin-top: 1rem;
+}
