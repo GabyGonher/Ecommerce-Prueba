@@ -1,24 +1,18 @@
 .bodyNav {
   background-color: transparent;
   position: fixed;
-  /* padding: 1%; */
   width: 100%;
   top: 12%;
-  /* position: fixed; */
-  /* left: 0%; */
   padding: .8rem;
 }
 
 .containerImag {
   background-color: transparent;
-  /* padding: 15px; */
 }
 
 .containerMenu {
   background-color: transparent;
   padding: 10px;
-  /* text-align: right;
-  justify-content: end; */
 }
 
 .imgCategory {
@@ -31,7 +25,5 @@
   font-size: 30px;
   color: #e4740c;
   border-top-left-radius: 20px;
-  /* max-width: 10px; */
-  /* padding: 10px; */
 
 }
