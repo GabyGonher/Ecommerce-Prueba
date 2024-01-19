@@ -1,19 +1,19 @@
-.bodyNav{
-  background-color: rgb(116, 47, 206);
+.bodyNav {
+  background-color: yellowgreen !important;
   position: fixed;
-  padding:1%;
+  padding: 1%;
   width: 100%;
-  top:12%;
+  top: 12%;
   left: 0%;
 }
 
-.containerImag{
-  background-color:chartreuse;
+.containerImag {
+  background-color: transparent;
   padding: 15px;
 }
 
-.containerMenu{
-  background-color: chocolate;
+.containerMenu {
+  background-color: transparent;
   padding: 15px;
   /* text-align: right;
   justify-content: end; */
