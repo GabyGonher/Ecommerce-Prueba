@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import './styleOferta.css';
 import CardOferta from './CardOferta/CardOferta';
-import { productos } from '../../Data/DataOferta';
+import { productos } from '../../Data/DataOferta/DataOferta';
 
 
 console.log(productos[0].img)
