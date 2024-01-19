@@ -1,0 +1,12 @@
+.CardE {
+  background-color: aliceblue;
+}
+
+.ContainerImg {
+  /* max-height: 3rem; */
+  max-width: 2rem;
+}
+
+.tituloProducto {
+  color: blue;
+}

@@ -1,0 +1,25 @@
+.OfertaExclusiva {
+  background-color: transparent;
+  height: 8rem;
+  margin-top: 2rem;
+  max-width: 80rem;
+  font-weight: bold;
+
+
+}
+
+.titleOfertaE {
+  background-color: transparent;
+  font-family: Arial black;
+  color: #0077C8;
+  font-size: 2rem;
+  /* text-align: center !important; */
+  height: 3rem;
+
+}
+
+.seccionProductE {
+  background-color: black;
+  height: 14rem;
+  margin-top: 1rem;
+}
