@@ -1,19 +1,21 @@
-.divTexto{
- height: 500px;
+.divTexto {
+  height: 500px;
   margin-top: 12%;
-background-color: #e4740c;
-  /* background-image: url('/'); */
-  
+  background-color: #e4740c;
+  background-image: url('https://chedrauimx.vteximg.com.br/arquivos/logo-llevarte-mas-lp-ofertas-desktop.svg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
-.divImg{
-  /* height: "500px";
-  margin-top: '12'; */
+
+.divImg {
   height: 500px;
   margin-top: 12%;
   background-color: #F5F5F6;
   background-image: url('./img/bn_leche.png');
-  background-size:contain;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
