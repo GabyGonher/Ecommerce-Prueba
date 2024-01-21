@@ -1,0 +1,85 @@
+.ContenedorDetail {
+  background-color: white;
+  height: 35rem;
+  margin-top: 14%;
+  margin-right: 5rem;
+}
+
+.ImgDetail {
+  min-width: 50rem;
+  min-height: 30rem;
+  background-color: black;
+}
+
+.TextDetail {
+  width: 30rem;
+  height: 30rem;
+  background-color: transparent;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #230704;
+}
+
+.DetailCaracter {
+  margin-top: 8%;
+  text-align: left;
+  color: #e4740c;
+}
+
+.titleDetail {
+  margin-top: 12%;
+  font-weight: bold;
+  font-size: 1.8rem;
+
+}
+
+.category {
+  color: rgb(135, 133, 133);
+  font-style: italic;
+  font-size: medium;
+}
+
+
+.rate {
+  color: rgb(135, 133, 133);
+  font-size: small;
+}
+
+.count {
+  color: rgb(25, 25, 138);
+  font-size: small;
+}
+
+.priceDetail {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0077C8;
+}
+
+.btnBuy {
+  background-color: var(--naranja);
+  border-color: transparent;
+  top: 350px;
+  left: 25px;
+  right: 25px;
+  cursor: pointer
+}
+
+.heart {
+  position: relative;
+  top: 10px;
+  left: 210px;
+  font-size: 17px;
+  color: rgb(134, 134, 134);
+  cursor: pointer
+}
+
+.List {
+  position: relative;
+  top: 38px;
+  left: 195px;
+  font-size: 17px;
+  color: rgb(134, 134, 134);
+  cursor: pointer
+}

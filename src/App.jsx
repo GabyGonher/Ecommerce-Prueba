@@ -3,13 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home';
 import './App.css'
 import Header from './Layout/Header/Header';
+import DetailProduct from './Pages/Other/DetailProduct';
+
 
 
 // Se definen las rutas del proyecto
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
-  
+    { path: '/detalles', element: <DetailProduct /> },
+
   ]);
   return routes;
 };
@@ -18,8 +21,8 @@ const AppRoutes = () => {
 function App() {
   return (
     <BrowserRouter>
-    <AppRoutes />
-    <Header />
+      <AppRoutes />
+      <Header />
 
     </BrowserRouter>
   );
