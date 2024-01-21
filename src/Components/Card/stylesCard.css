@@ -1,23 +1,7 @@
-/* PALETA DE COLORES */
-:root {
-  --naranja: #e4740c;
-  --azul: #0474c4;
-
-}
-
-
 .contenCard {
   position: absolute;
-  background-color: cadetblue;
   margin-top: 12rem;
   height: 27rem;
-  /* margin-top: 2rem; */
-  max-width: 80rem;
-  position: relative;
-  /* margin-top: 20px;  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 
@@ -28,36 +12,44 @@
   padding-bottom: 3rem;
   border: 1px solid #ddd;
   border-radius: 10px;
-  /* overflow: hidden; */
   width: 15rem;
   height: 22rem;
   display: flex;
   justify-content: center;
-  /* align-content: center; */
   align-items: center;
-  /* padding-top: 2rem; */
 
 }
 
 .ImagenCard {
-  /* max-width: 70%; */
-  /* border-color: #e4740c; */
   border-bottom: 1px solid #ddd;
-  width: 100%;
-  height: 60%;
+  margin: 10px;
+  width: 60%;
+  height: 40%;
 }
 
 .heart {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(134, 134, 134);
 
 }
 
+.List {
+  position: absolute;
+  top: 38px;
+  right: 10px;
+  font-size: 17px;
+  color: rgb(134, 134, 134);
+}
+
+.textCard {
+  font-size: 13px;
+  overflow: hidden;
+}
+
 .precio {
-  /* position: relative; */
   color: #0474c4;
   font-weight: bold;
 
@@ -67,7 +59,16 @@
 .btnComprar {
   background-color: var(--naranja);
   border-color: transparent;
-  /* background-color:  #0474c4 ; */
-  /* color: blueviolet; */
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  right: 20px;
 
+
+}
+
+.carousel-control-next>span {
+  background-color: #e4740c;
+  border-radius: 50px;
+  padding: 20px;
 }

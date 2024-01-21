@@ -1,31 +1,55 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { CardProduct } from '../Card';
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
+import DataApi from '../../../Data/FakeApi/DataApi';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import '../stylesCard.css'
+
+
 
 
 
 export function Carrusel() {
-  return (
-    <Carousel>
+  const products = DataApi();
+  console.log(products);
 
-      <Carousel.Item interval={5000}>
+  if (products) {
+    return (
+      <Container fluid className='contenCard'>
+        <Row>
+          <Col xs={12}>
+            <Carousel>
+              {(() => {
+                const carouselItems = [];
+                const totalProducts = products.length;
 
-        <CardProduct />
-        <Carousel.Caption>
+                for (let i = 0; i < totalProducts; i += 6) {
+                  const cards = [];
+                  for (let j = i; j < Math.min(i + 6, totalProducts); j++) {
+                    cards.push(
+                      <Col xs={2} key={products[j].id}>
+                        <CardProduct product={products[j]} />
+                      </Col>
+                    );
+                  }
 
-        </Carousel.Caption>
+                  carouselItems.push(
+                    <Carousel.Item interval={5000} key={i}>
+                      <Row>{cards}</Row>
+                    </Carousel.Item>
+                  );
+                }
 
-
-      </Carousel.Item>
-      <Carousel.Item interval={5000}>
-        <CardProduct />
-        <Carousel.Caption>
-
-
-        </Carousel.Caption>
-      </Carousel.Item>
-
-    </Carousel>
-  );
+                return carouselItems;
+              })()}
+            </Carousel>
+          </Col>
+        </Row>
+      </Container>
+    );
+  } else {
+    return <Spinner animation='border' variant='warning' />;
+  }
 }
+
+
 
