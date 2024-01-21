@@ -25,11 +25,11 @@ export function CardProduct(product) {
     <Col>
       <Card className='bodyCard'>
         <a href={urlDetalleProduct} target="_self" rel="noopener noreferrer" style={{ display: 'block' }}>
-          <Card.Img variant="top" className='ImagenCard' src={image} onClick={enviarPD} fuid />
+          <Card.Img variant="top" className='ImagenCard mt-5' src={image} onClick={enviarPD} fuid />
         </a>
         <Card.Body style={{ textAlign: 'center', height: '10%' }}> <FontAwesomeIcon className='heart' icon={faHeart} /><FontAwesomeIcon className='List' icon={faList} />
           {/* <Card.Title>Titulo de producto</Card.Title> */}
-          <Card.Text className='textCard' >{title}</Card.Text>
+          <Card.Text className='textCard text-truncate mt-2' >{title}</Card.Text>
           <p className='precio' style={{ paddingTop: '1rem' }}>${price}</p>
           <Button className='btnComprar' > <FontAwesomeIcon icon={faShoppingCart} /> Agregar</Button>
         </Card.Body>

@@ -6,7 +6,8 @@ export default function DataApi(id = null) {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    const url = id === null ? 'https://fakestoreapi.com/products/' : `https://fakestoreapi.com/products/${id}`
+    const url = 'https://fakestoreapi.com/products/' + (id === null ? '' : (isNaN(id) ? `category/${id}` : id));
+
     fetch(url)
       .then(res => res.json())
       .then((data) => {
