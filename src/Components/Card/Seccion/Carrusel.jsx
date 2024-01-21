@@ -8,8 +8,8 @@ import '../stylesCard.css'
 
 
 
-export function Carrusel() {
-  const products = DataApi();
+export function Carrusel(category = null) {
+  const products = DataApi(category.category);
   console.log(products);
 
   if (products) {

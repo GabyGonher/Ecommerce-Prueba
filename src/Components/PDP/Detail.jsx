@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useParams } from 'react-router-dom';
 import DataApi from '../../Data/FakeApi/DataApi';
 import './stylesDetail.css'
+import { Carrusel } from '../Card/Seccion/Carrusel';
+
 
 export default function Detail() {
   const { id } = useParams();
@@ -28,7 +30,7 @@ export default function Detail() {
               <br />
               <h6 className='descriptionDetail'>{products.description}</h6>
               <br />
-              <h6 className='rate'>Tasa: {products.rating.rate}</h6>
+              <h6 className='rate'><b>{products.rating.rate} de 5</b></h6>
               <h6 className='count'>Contador: {products.rating.count}</h6>
               <br />
               <h2 className='priceDetail'>${products.price}</h2>
@@ -38,7 +40,7 @@ export default function Detail() {
             </Col>
           </Row>
         </Container>
-
+        <Carrusel category={products.category} />
       </>
     );
   } else {
