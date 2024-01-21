@@ -6,16 +6,30 @@
 }
 
 .ImgDetail {
-  min-width: 50rem;
-  min-height: 30rem;
-  background-color: black;
+  /* min-width: 50rem;
+  min-height: 30rem; */
+
+  width: 100%;
+  /* Hacer que el ancho sea 100% del contenedor */
+  height: auto;
+  /* Permitir que la altura se ajuste automáticamente */
+  max-width: 50rem;
+  /* Establecer un ancho máximo si es necesario */
+  max-height: 30rem;
+
 }
 
 .TextDetail {
-  width: 30rem;
-  height: 30rem;
-  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
   text-align: center;
+  max-width: 40rem;
+  max-height: 65rem;
+  background-color: transparent;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   border-radius: 10px;
   box-shadow: 5px 5px 10px #230704;
@@ -32,6 +46,11 @@
   font-weight: bold;
   font-size: 1.8rem;
 
+}
+
+.descriptionDetail {
+  text-transform: none;
+  padding: 10px;
 }
 
 .category {
@@ -52,24 +71,35 @@
 }
 
 .priceDetail {
+  position: relative;
+  color: #0474c4;
   font-size: 3rem;
   font-weight: bold;
-  color: #0077C8;
+  /* color: #0077C8; */
+  justify-content: end;
+  align-items: end;
 }
 
 .btnBuy {
+  position: relative;
+  /* padding: 15px; */
+  /* padding-bottom: 15px; */
+  /* margin-top: 15px; */
+  margin-bottom: 15px;
   background-color: var(--naranja);
   border-color: transparent;
-  top: 350px;
+  justify-content: end;
+  align-items: end;
+  /* top: 350px;
   left: 25px;
-  right: 25px;
+  right: 25px; */
   cursor: pointer
 }
 
 .Iconheart {
   position: relative;
   top: 10px;
-  left: 210px;
+  left: 300px;
   font-size: 17px;
   color: rgb(134, 134, 134);
   cursor: pointer
@@ -78,7 +108,7 @@
 .IconList {
   position: relative;
   top: 38px;
-  left: 195px;
+  left: 285px;
   font-size: 17px;
   color: rgb(134, 134, 134);
   cursor: pointer

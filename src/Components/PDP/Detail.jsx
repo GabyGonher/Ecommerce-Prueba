@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Image, Spinner } from 'react-bootstrap'
 import { faShoppingCart, faHeart, faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useParams } from 'react-router-dom';
@@ -8,39 +8,43 @@ import './stylesDetail.css'
 export default function Detail() {
   const { id } = useParams();
   const products = DataApi(id);
-  console.log(products, "detail");
-  // const { image, title, price } = product.product;
-
-  console.log(useParams(id));
-  // console.log(product.title)
-  // console.log(title);
 
 
+  if (products) {
+    return (
+      <>
+        <Container fluid className='ContenedorDetail'>
+          <Row className="mb-3" style={{ gap: "5rem" }}>
+            <Col md={{ span: 2, offset: 2 }} className='ImgDetail'>
+              <Image src={products.image} fluid />
+            </Col>
+            <Col xs={12} md={6} className='TextDetail'>
+              <div>
+                <FontAwesomeIcon className='Iconheart' icon={faHeart} />
+                <FontAwesomeIcon className='IconList' icon={faList} />
+              </div>
+              <h5 className='titleDetail'>{products.title}</h5>
+              <h6 className='category'>{products.category}</h6>
+              <br />
+              <h6 className='descriptionDetail'>{products.description}</h6>
+              <br />
+              <h6 className='rate'>Tasa: {products.rating.rate}</h6>
+              <h6 className='count'>Contador: {products.rating.count}</h6>
+              <br />
+              <h2 className='priceDetail'>${products.price}</h2>
+              <Button className='btnBuy'>
+                <FontAwesomeIcon icon={faShoppingCart} /> Agregar
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+
+      </>
+    );
+  } else {
+    return <Spinner animation='border' variant='warning' />;
+
+  }
 
 
-  return (
-    <>
-      <Container fluid className='ContenedorDetail'>
-        <Row className="mb-3" style={{ gap: "5rem" }}>
-          <Col md={{ span: 2, offset: 2 }} className='ImgDetail'>
-          </Col>
-          <Col xs={12} md={6} className='TextDetail'>
-            <FontAwesomeIcon className='Iconheart' icon={faHeart} /><FontAwesomeIcon className='IconList' icon={faList} />
-            <h5 className='titleDetail'></h5>
-            <h6 className='category'>Frutas y verduras</h6><br />
-            <h6 className='descriptionDetail'>Descripción:sdasd  sdsd sdsdsd dsdsd f g fgfgf gfgfg gfgfgfgfgfg fgfgfgfg fsd</h6> <br />
-            <h6 className='rate'>Tasa: 2121</h6>
-            <h6 className='count'> contador: 4545</h6><br />
-            <h2 className='priceDetail'>$10</h2>
-            <Button className='btnBuy' > <FontAwesomeIcon icon={faShoppingCart} /> Agregar</Button>
-          </Col>
-        </Row>
-      </Container>
-
-
-    </>
-
-  )
 }
-
-{/* <div style={{ height: '400px', backgroundColor: 'red' }}></div> */ }

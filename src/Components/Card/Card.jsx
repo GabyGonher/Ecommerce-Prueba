@@ -24,7 +24,7 @@ export function CardProduct(product) {
     // <Row xs="auto">
     <Col>
       <Card className='bodyCard'>
-        <a href={urlDetalleProduct} target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+        <a href={urlDetalleProduct} target="_self" rel="noopener noreferrer" style={{ display: 'block' }}>
           <Card.Img variant="top" className='ImagenCard' src={image} onClick={enviarPD} fuid />
         </a>
         <Card.Body style={{ textAlign: 'center', height: '10%' }}> <FontAwesomeIcon className='heart' icon={faHeart} /><FontAwesomeIcon className='List' icon={faList} />
