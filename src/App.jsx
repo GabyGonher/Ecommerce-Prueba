@@ -11,7 +11,7 @@ import DetailProduct from './Pages/Other/DetailProduct';
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
-    { path: '/detalles', element: <DetailProduct /> },
+    { path: '/detalles/:id', element: <DetailProduct /> },
 
   ]);
   return routes;
