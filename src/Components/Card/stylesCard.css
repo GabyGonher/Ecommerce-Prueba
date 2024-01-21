@@ -21,9 +21,12 @@
 }
 
 .ImagenCard {
-  border-bottom: 1px solid #ddd;
-  margin: 10px;
-  width: 60%;
+  /* border-bottom: 1px solid #ddd; */
+  position: relative;
+  /* margin: 10px; */
+  object-fit: cover;
+  margin: 19px;
+  width: 70%;
   height: 40%;
 }
 
@@ -47,11 +50,19 @@
 .textCard {
   font-size: 13px;
   overflow: hidden;
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  right: 20px;
 }
 
 .precio {
   color: #0474c4;
   font-weight: bold;
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  right: 20px;
 
 }
 

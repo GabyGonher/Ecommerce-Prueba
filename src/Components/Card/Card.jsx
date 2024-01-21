@@ -12,14 +12,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 {/* <FontAwesomeIcon icon="fa-solid fa-list" /> */ }
 
 export function CardProduct(product) {
-  console.log(product.product);
-  const { image, title, price } = product.product;
+  // console.log(product.product);
+  const { image, title, price, id } = product.product;
+  const urlDetalleProduct = `/detalles/${id}`
+  const enviarPD = () => {
+    window.location.href = urlDetalleProduct;
+
+  }
   return (
     // <Container className='contenCard'>
     // <Row xs="auto">
     <Col>
-      <Card className='bodyCard'
-      > <Card.Img variant="top" className='ImagenCard' src={image} />
+      <Card className='bodyCard'>
+        <a href={urlDetalleProduct} target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+          <Card.Img variant="top" className='ImagenCard' src={image} onClick={enviarPD} fuid />
+        </a>
         <Card.Body style={{ textAlign: 'center', height: '10%' }}> <FontAwesomeIcon className='heart' icon={faHeart} /><FontAwesomeIcon className='List' icon={faList} />
           {/* <Card.Title>Titulo de producto</Card.Title> */}
           <Card.Text className='textCard' >{title}</Card.Text>
