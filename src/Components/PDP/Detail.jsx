@@ -15,7 +15,7 @@ export default function Detail() {
   if (products) {
     return (
       <>
-        <Container fluid className='ContenedorDetail'>
+        <Container fluid className='ContenedorDetail' style={{ marginBottom: '5rem' }}>
           <Row className="mb-3" style={{ gap: "5rem" }}>
             <Col md={{ span: 2, offset: 2 }} className='ImgDetail'>
               <Image src={products.image} fluid />
@@ -39,8 +39,17 @@ export default function Detail() {
               </Button>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <h2 className='productRelacionado mt-5'>Productos relacionados</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Carrusel category={products.category} className='' />
+            </Col>
+          </Row>
         </Container>
-        <Carrusel category={products.category} />
       </>
     );
   } else {
@@ -50,3 +59,4 @@ export default function Detail() {
 
 
 }
+0
