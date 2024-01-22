@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function CardProduct(product) {
   const { image, title, price, id } = product.product;
-  const urlDetalleProduct = `/detalles/${id}`
+  // const urlDetalleProduct = `/detalles/${id}`
+  const urlDetalleProduct = `https://ecommerce-chedraui.vercel.app/detalles/${id}`
   const enviarPD = () => {
     window.location.href = urlDetalleProduct;
 

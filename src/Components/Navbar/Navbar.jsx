@@ -7,7 +7,8 @@ export function BarraNavbar() {
       <Container fluid className='contenedorNav'>
         <Navbar.Brand href="/">
           <img
-            src="/src/Components/Navbar/logoChedraui.png"
+            // src="/src/Components/Navbar/logoChedraui.png"
+            src="/assets/logoChedraui.png"
             alt="Logo"
             height="45"
             className="d-inline-block align-top"
