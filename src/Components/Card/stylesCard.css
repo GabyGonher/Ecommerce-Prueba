@@ -21,9 +21,7 @@
 }
 
 .ImagenCard {
-  /* border-bottom: 1px solid #ddd; */
   position: relative;
-  /* margin: 10px; */
   object-fit: cover;
   margin: 19px;
   width: 70%;

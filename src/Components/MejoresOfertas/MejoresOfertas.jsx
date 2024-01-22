@@ -1,12 +1,9 @@
-
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import './stylesM.css'
 import { mejorOferta } from '../../Data/MejoresOfertas/DataMejorOferta';
+import './stylesM.css'
 
 
 export default function MejoresOfertas() {
-  console.log(mejorOferta);
-  console.log(mejorOferta[0].title);
 
   return (
     <Container className='containerMejoresOfertas'>

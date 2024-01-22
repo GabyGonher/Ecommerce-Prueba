@@ -6,14 +6,11 @@
 
 }
 
-
 .img {
   border-radius: 10px;
   width: 300%;
   height: 110%;
-
-
-
+  cursor: pointer;
 }
 
 .CardE:hover .img,

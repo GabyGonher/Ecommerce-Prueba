@@ -2,7 +2,7 @@
   background-color: transparent;
   position: fixed;
   width: 100%;
-  top: 12%;
+  top: 9%;
   padding: .8rem;
 }
 
@@ -26,4 +26,8 @@
   color: #e4740c;
   border-top-left-radius: 20px;
 
+}
+
+.menuTexto {
+  font-size: 1.1rem;
 }

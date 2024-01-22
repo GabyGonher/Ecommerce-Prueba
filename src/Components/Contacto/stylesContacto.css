@@ -1,9 +1,5 @@
 .containerContacto {
   margin-top: 5rem;
-  /* display: flex;
-  justify-content: center;
-  padding: 15px; */
-
 }
 
 .item a {
@@ -45,8 +41,4 @@ item:hover a::before {
 
 .item:nth-child(2) {
   --bg-color: #0077b5;
-}
-
-.item:nth-child(3) {
-  --bg-color: #ff0000;
 }

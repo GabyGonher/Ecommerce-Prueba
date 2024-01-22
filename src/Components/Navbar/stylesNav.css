@@ -1,14 +1,20 @@
 .contenedorNav {
   position: fixed;
   width: 100%;
+  background-color: white;
   padding: 15px;
   top: 0%;
   left: 0%;
-  background-color: white;
 }
 
 .buscador {
   margin-right: auto;
+}
+
+.optionsBar {
+  display: flex;
+  justify-content: right;
+  align-items: end;
 }
 
 .navbar .navbar-brand {
@@ -19,4 +25,5 @@
 .navbar .nav-link {
   text-decoration: none;
   margin-right: 50px;
+  font-size: 1.1rem;
 }

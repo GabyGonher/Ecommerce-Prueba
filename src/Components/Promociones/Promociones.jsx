@@ -1,14 +1,8 @@
-import {
-  Container, Row, Col,
-  Image
-} from 'react-bootstrap'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import './stylesPromo.css'
 import { promociones } from "../../Data/Promociones/DataPromociones";
 
 export default function Promociones() {
-  console.log(promociones, 'promociones')
-  console.log(promociones[0].text)
-  // const { img, title } = oferta.ofertas;
   return (
 
     <Container className='containerPromo'>

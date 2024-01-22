@@ -1,5 +1,4 @@
 import BanerPrincipal from "../../Components/Baner/BanerPrincipal"
-// import { CardProduct } from "../../Components/Card/Card"
 import { Carrusel } from "../../Components/Card/Seccion/Carrusel"
 import Contacto from "../../Components/Contacto/Contacto"
 import MejoresOfertas from "../../Components/MejoresOfertas/MejoresOfertas"
