@@ -1,23 +1,31 @@
 .containerMejoresOfertas {
-  background-color: black;
-  height: auto;
-  margin-top: 1rem;
-  font-weight: bold;
-  /* margin-bottom: 15rem; */
+  background-color: transparent;
+  margin-top: 10px;
 }
 
-.titleTarjetas {
+.titleTarjetas1 {
   color: #0077C8;
+  font-weight: bold;
+  font-family: Arial black;
 
 }
 
 .Tarjetas {
-  background-color: aquamarine;
   padding: 2rem;
-  /* height: auto; */
-  height: 20rem;
+  height: 30rem;
   border-right: 10px solid white;
   margin-bottom: 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.titleTarjeta {
+  color: white;
+  font-weight: bold;
+}
+
+.textTarjetas {
+  position: absolute;
+  color: white;
+  font-size: small;
 }
