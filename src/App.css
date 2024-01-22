@@ -1,17 +1,26 @@
 /* #root { */
-  /* PALETA DE COLORES */
+/* PALETA DE COLORES */
 :root {
---naranja: #e4740c;
---azul: #0474c4;
+  --naranja: #e4740c;
+  --azul: #0474c4;
 
 }
 
-.title{
+.title {
   background-color: var(--naranja);
 }
 
+.zoom-image {
+  transition: transform 0.3s ease;
+}
 
-  /* max-width: 1280px;
+.zoom-image:hover {
+  transform: scale(1.2);
+  /* Ajusta el factor de escala según tus necesidades */
+}
+
+
+/* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center; */
