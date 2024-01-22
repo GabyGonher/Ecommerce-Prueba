@@ -10,7 +10,7 @@ import '../stylesCard.css'
 
 export function Carrusel(category = null) {
   const products = DataApi(category.category);
-  console.log(products);
+  // console.log(products);
 
   if (products) {
     return (
