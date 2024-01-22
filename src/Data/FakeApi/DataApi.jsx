@@ -12,7 +12,8 @@ export default function DataApi(id = null) {
       .then(res => res.json())
       .then((data) => {
         setItems(() => data);
-      });
+      })
+      .catch(e => alert(`Ocurrió un error al intentar obtener los artículos: ${e}`));
 
   }, []);
 
