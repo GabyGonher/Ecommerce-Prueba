@@ -13,6 +13,11 @@ export default function Promociones() {
 
     <Container className='containerPromo'>
       <Row>
+        <Col className='titlePromociones' xs={12}>
+          <h1>Promociones Chedraui que no te puedes perder</h1>
+        </Col>
+      </Row>
+      <Row>
         <Col className='targetProducts BigTarget' xs={6}>
           <Row>
             <Col xs={6}>

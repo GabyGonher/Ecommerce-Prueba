@@ -13,6 +13,7 @@
   height: 110%;
 
 
+
 }
 
 .CardE:hover .img,
@@ -23,7 +24,7 @@
 
 }
 
-.tituloProducto {
+.tituloProduct {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: bold;
