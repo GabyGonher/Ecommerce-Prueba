@@ -1,15 +1,17 @@
 .containerPromo {
-  background-color: yellowgreen;
-  /* background-color: transparent; */
-  height: 8rem;
+  height: auto;
   margin-top: 40rem;
   max-width: 80rem;
   font-weight: bold;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 
 .targetProducts {
 
-  background-color: cadetblue;
-  border: 1px solid red;
+  background-color: #F5F5F5;
+  padding: 5rem;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
